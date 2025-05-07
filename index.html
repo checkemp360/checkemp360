@@ -2,98 +2,163 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>CheckEmp360 - Comprehensive Employee Verification</title>
-  <link rel="stylesheet" href="css/styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EmpCheck360 - Employee Background Verification Platform</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #ffffff;
+      color: #1a1a1a;
+    }
+    header {
+      background-color: #002f5f;
+      color: white;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 1.5em;
+    }
+    nav a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .hero {
+      padding: 80px 40px;
+      background-color: #e6f2ff;
+      text-align: center;
+    }
+    .hero h2 {
+      font-size: 2.8em;
+      margin-bottom: 20px;
+    }
+    .hero p {
+      font-size: 1.2em;
+      max-width: 700px;
+      margin: 0 auto 30px;
+    }
+    .cta-button {
+      padding: 14px 28px;
+      background-color: #002f5f;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: 600;
+    }
+    .section {
+      padding: 60px 40px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .section h3 {
+      font-size: 2.2em;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+    .card {
+      background-color: #f2f9ff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+    footer {
+      background-color: #002f5f;
+      color: white;
+      text-align: center;
+      padding: 20px 40px;
+      margin-top: 40px;
+    }
+  </style>
 </head>
 <body>
+  <header>
+    <h1>EmpCheck360</h1>
+    <nav>
+      <a href="#features">Features</a>
+      <a href="#how">How It Works</a>
+      <a href="#why">Why Us</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-  <!-- Hero Section -->
   <section class="hero">
-    <h1>Welcome to CheckEmp360</h1>
-    <p>Your trusted partner in employee background verification.</p>
+    <h2>Background Verification. Simplified.</h2>
+    <p>EmpCheck360 is your trusted partner for fast, accurate, and compliant employee background checks tailored to your hiring process.</p>
     <a href="#contact" class="cta-button">Get Started</a>
   </section>
 
-  <!-- Services Section -->
-  <section class="services">
-    <h2>Our Services</h2>
-    <div class="service-cards">
-      <div class="card">
-        <h3>ID Verification</h3>
-        <p>Authenticate government-issued IDs with precision.</p>
-      </div>
-      <div class="card">
-        <h3>Address Verification</h3>
-        <p>Confirm residential addresses through physical and digital means.</p>
-      </div>
-      <div class="card">
-        <h3>Employment Verification</h3>
-        <p>Validate past employment details efficiently.</p>
-      </div>
-      <!-- Add more service cards as needed -->
+  <section class="section" id="features">
+    <h3>Key Features</h3>
+    <div class="grid">
+      <div class="card"><strong>Identity Verification:</strong> We verify government-issued IDs like PAN, Aadhaar, and Passports. Advanced facial recognition and liveness checks ensure the person is who they claim to be.</div>
+      <div class="card"><strong>Address Verification:</strong> We use geo-tagged proof and field agents or digital verification methods to validate a candidate’s current and permanent addresses.</div>
+      <div class="card"><strong>Education Check:</strong> Our team reaches out directly to universities and educational institutions to confirm the validity of degrees and certificates submitted.</div>
+      <div class="card"><strong>Employment History:</strong> We contact previous employers to validate job title, tenure, responsibilities, and any red flags in performance or behavior.</div>
+      <div class="card"><strong>Criminal Record Check:</strong> We perform a comprehensive PAN-India police record check, including court record validation across jurisdictions.</div>
+      <div class="card"><strong>Reference Checks:</strong> Structured interviews are conducted with professional and personal references to evaluate the candidate’s behavior, skills, and attitude.</div>
+      <div class="card"><strong>Global Sanctions:</strong> We screen candidates against international watchlists such as OFAC, Interpol, and domestic sanction databases to flag potential compliance risks.</div>
+      <div class="card"><strong>Custom Dashboards:</strong> Access reports and statuses in real-time via a secure dashboard. Download formatted PDF reports, receive alerts, and integrate via API.</div>
     </div>
   </section>
 
-  <!-- How It Works Section -->
-  <section class="how-it-works">
-    <h2>How It Works</h2>
-    <ol>
-      <li>Submit candidate details securely.</li>
-      <li>Our system initiates the verification process.</li>
-      <li>Receive comprehensive reports promptly.</li>
-    </ol>
+  <section class="section" id="how">
+    <h3>How It Works</h3>
+    <div class="grid">
+      <div class="card"><strong>1. Upload Candidate Details:</strong> Employers upload candidates’ basic info (name, email, phone, ID) via dashboard or our REST API.</div>
+      <div class="card"><strong>2. Choose Verification Package:</strong> Select from predefined or tailor-made verification packages based on the candidate’s role and location.</div>
+      <div class="card"><strong>3. Consent and Initiation:</strong> Candidate receives a secure link to give consent and upload necessary documents, ensuring compliance with privacy laws.</div>
+      <div class="card"><strong>4. Automated & Manual Checks:</strong> Our system runs instant database checks while our operations team handles physical and telephonic verifications.</div>
+      <div class="card"><strong>5. Quality Control:</strong> Every verification goes through a two-tier quality control process before report generation.</div>
+      <div class="card"><strong>6. Access Final Reports:</strong> Reports are made available within 24–72 hours on the dashboard, with options for download or system integration.</div>
+    </div>
   </section>
 
-  <!-- Industries Served Section -->
-  <section class="industries">
-    <h2>Industries We Serve</h2>
-    <ul>
-      <li>Information Technology</li>
-      <li>Healthcare</li>
-      <li>Finance</li>
-      <li>Education</li>
-      <!-- Add more industries as needed -->
-    </ul>
+  <section class="section" id="why">
+    <h3>Why EmpCheck360?</h3>
+    <div class="grid">
+      <div class="card"><strong>Fast TAT:</strong> Industry-leading turnaround times under 3 days.</div>
+      <div class="card"><strong>Trusted by HR Teams:</strong> Serving enterprises, startups, and recruiters globally.</div>
+      <div class="card"><strong>Secure and Compliant:</strong> ISO 27001, GDPR, and IT Act compliant systems.</div>
+      <div class="card"><strong>Integrated Workflows:</strong> Seamless integration with ATS, HRMS, and onboarding platforms.</div>
+    </div>
   </section>
 
-  <!-- Testimonials Section -->
-  <section class="testimonials">
-    <h2>What Our Clients Say</h2>
-    <blockquote>
-      "CheckEmp360 streamlined our hiring process with accurate verifications."
-      <cite>- HR Manager, TechCorp</cite>
-    </blockquote>
-    <!-- Add more testimonials as needed -->
+  <section class="section" id="pricing">
+    <h3>Pricing</h3>
+    <div class="grid">
+      <div class="card"><strong>Basic Plan:</strong> ₹199 per candidate – ID, Address, Criminal.</div>
+      <div class="card"><strong>Standard Plan:</strong> ₹399 per candidate – Basic + Education & Employment checks.</div>
+      <div class="card"><strong>Premium Plan:</strong> ₹599 per candidate – All checks + Reference + Sanctions.</div>
+      <div class="card"><strong>Enterprise:</strong> Custom pricing for bulk hiring or integrations. Contact us.</div>
+    </div>
   </section>
 
-  <!-- Contact Section -->
-  <section id="contact" class="contact">
-    <h2>Contact Us</h2>
-    <form>
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" required>
-
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required>
-
-      <label for="message">Message:</label>
-      <textarea id="message" name="message" required></textarea>
-
-      <button type="submit">Send Message</button>
-    </form>
+  <section class="section" id="contact">
+    <h3>Contact Us</h3>
+    <p>Email: <a href="mailto:support@empcheck360.com">support@empcheck360.com</a></p>
+    <p>Phone: +91-98765-43210</p>
+    <p>Location: Chennai, India</p>
+    <p>Ready to streamline your hiring? Reach out for a demo or custom proposal today.</p>
   </section>
 
-  <!-- Footer -->
   <footer>
-    <p>&copy; 2025 CheckEmp360. All rights reserved.</p>
-    <div class="social-media">
-      <a href="#">LinkedIn</a>
-      <a href="#">Twitter</a>
-      <!-- Add more social media links as needed -->
-    </div>
+    <p>&copy; 2025 EmpCheck360. All rights reserved. | Privacy Policy | Terms of Use</p>
   </footer>
-
-  <script src="js/script.js"></script>
 </body>
 </html>

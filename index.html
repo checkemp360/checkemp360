@@ -1,103 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>CheckEmp360 - Employee Verification Made Easy</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0; padding: 0;
-      background: #f5f7fa; color: #333;
-    }
-    header {
-      background: #0f62fe;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-    header h1 { margin: 0; font-size: 2em; }
-    nav {
-      background: #e1e8f0;
-      padding: 10px;
-      text-align: center;
-    }
-    nav a {
-      margin: 0 15px; text-decoration: none; color: #0f62fe;
-      font-weight: bold;
-    }
-    section {
-      max-width: 800px; margin: 40px auto;
-      padding: 0 20px;
-    }
-    section h2 { color: #0f62fe; }
-    .features {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 20px;
-      margin-top: 20px;
-    }
-    .card {
-      background: white;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    }
-    footer {
-      background: #0f62fe;
-      color: white;
-      text-align: center;
-      padding: 15px;
-      margin-top: 40px;
-    }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CheckEmp360 - Comprehensive Employee Verification</title>
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
-<header>
-  <h1>CheckEmp360</h1>
-  <p>360° Employee Background Verification Platform</p>
-</header>
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Welcome to CheckEmp360</h1>
+    <p>Your trusted partner in employee background verification.</p>
+    <a href="#contact" class="cta-button">Get Started</a>
+  </section>
 
-<nav>
-  <a href="#features">Features</a>
-  <a href="#about">About</a>
-  <a href="#contact">Contact</a>
-</nav>
-
-<section id="features">
-  <h2>Key Features</h2>
-  <div class="features">
-    <div class="card">
-      <h3>Fast Verification</h3>
-      <p>Get instant checks on employee background, identity, and credentials.</p>
+  <!-- Services Section -->
+  <section class="services">
+    <h2>Our Services</h2>
+    <div class="service-cards">
+      <div class="card">
+        <h3>ID Verification</h3>
+        <p>Authenticate government-issued IDs with precision.</p>
+      </div>
+      <div class="card">
+        <h3>Address Verification</h3>
+        <p>Confirm residential addresses through physical and digital means.</p>
+      </div>
+      <div class="card">
+        <h3>Employment Verification</h3>
+        <p>Validate past employment details efficiently.</p>
+      </div>
+      <!-- Add more service cards as needed -->
     </div>
-    <div class="card">
-      <h3>Comprehensive Reports</h3>
-      <p>Consolidated reports for HR decision-making with audit trails.</p>
+  </section>
+
+  <!-- How It Works Section -->
+  <section class="how-it-works">
+    <h2>How It Works</h2>
+    <ol>
+      <li>Submit candidate details securely.</li>
+      <li>Our system initiates the verification process.</li>
+      <li>Receive comprehensive reports promptly.</li>
+    </ol>
+  </section>
+
+  <!-- Industries Served Section -->
+  <section class="industries">
+    <h2>Industries We Serve</h2>
+    <ul>
+      <li>Information Technology</li>
+      <li>Healthcare</li>
+      <li>Finance</li>
+      <li>Education</li>
+      <!-- Add more industries as needed -->
+    </ul>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials">
+    <h2>What Our Clients Say</h2>
+    <blockquote>
+      "CheckEmp360 streamlined our hiring process with accurate verifications."
+      <cite>- HR Manager, TechCorp</cite>
+    </blockquote>
+    <!-- Add more testimonials as needed -->
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 CheckEmp360. All rights reserved.</p>
+    <div class="social-media">
+      <a href="#">LinkedIn</a>
+      <a href="#">Twitter</a>
+      <!-- Add more social media links as needed -->
     </div>
-    <div class="card">
-      <h3>Secure & Compliant</h3>
-      <p>Built with privacy and compliance in mind (GDPR, ISO 27001).</p>
-    </div>
-  </div>
-</section>
+  </footer>
 
-<section id="about">
-  <h2>About CheckEmp360</h2>
-  <p>
-    We simplify employee verification for companies of all sizes. Our platform integrates data from trusted sources and helps HR teams onboard with confidence.
-  </p>
-</section>
-
-<section id="contact">
-  <h2>Contact Us</h2>
-  <p>Email: contact@checkemp360.com<br>Phone: +91-XXXXXXXXXX</p>
-</section>
-
-<footer>
-  &copy; 2025 CheckEmp360. All rights reserved.
-</footer>
-
+  <script src="js/script.js"></script>
 </body>
 </html>
